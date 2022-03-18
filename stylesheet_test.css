@@ -1,0 +1,769 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+
+/*
+コンテンツカラー
+fdf5f4
+ボタンカラー
+d6ceba
+キャプションカラー
+ff6556
+ヘッダー・タイトルカラー
+00386a
+ボーダーカラー
+e2e2e2
+スケジュール背景・コンタクト背景
+f3f2ec
+テキストカラー1
+000000
+テキストカラー2
+3f3f3fs
+フッターカラー
+d7d4c1
+ボタンテキストカラー
+ffffff
+*/
+
+/* global style */
+body {
+  background-color: #ffffff;
+  width: 100%;
+}
+p, h3, .profile .hoby, .profile .name, .profile .skill, .submit_btn input, .back_btn a {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+h1
+, h2
+, .past_schedule_list span
+, .schedule span
+, .border p
+, .personal_color
+, .personal_info > div
+, .personal_info > p
+, .name_en
+, footer .copyright p
+, .date
+, .past_date div
+, button {
+  font-family: 'Montserrat', sans-serif;
+}
+img, div {
+  width: 100%;
+}
+.flex, .member ul, .personal_infomation .personal_info, .form_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.member ul {
+  justify-content: space-between;
+}
+body, ul, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  width: fit-content;
+  display: block;
+  text-decoration: none;
+}
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+h2 {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+section {
+  margin-top: 40px;
+}
+h2::before {
+  content: "";
+  width: 21px;
+  height: 2px;
+  background-color: #ff6556;
+  display: block;
+  left: 0;
+  top: 8px;
+}
+.personal_info > div {
+  color: #ffffff;
+}
+p {
+  color: #000000;
+}
+h1, h2, .copyright p {
+  color: #00386a;
+}
+.mv
+, section
+, .schedule
+, button
+, .personal_color
+, .profile
+, .border
+, .back_btn
+, .submit_btn
+, .banner_img
+, .more {
+  position: relative;
+}
+.personal_color::before
+, h2::before
+, .mv div
+, .border p
+, .date::before
+, .banner_img img
+, button::before {
+  position: absolute;
+}
+.schedule_list p, .past_schedule_list p {
+  border-bottom: 1px solid #000000;
+  display: inline;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  font-weight: 600;
+}
+.schedule_list span, .past_schedule_list span {
+  border-bottom: 1px solid #ff6556;
+}
+/* global style end */
+
+/* font size */
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+h1 span {
+  font-weight: 300;
+}
+.mandatory {
+  font-size: 0.5em
+}
+h2 {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+/* font size end */
+
+/* btn color */
+.back_btn a, .submit_btn input {
+  color: #ffffff;
+}
+/* btn color end */
+
+/* background color */
+.contain_background_color_change {
+  background-color: #fdf5f4;
+}
+.personal_color {
+  background-color: #ffffff;
+  border-radius:
+}
+footer {
+  background-color: #d7d4c1;
+}
+/* background color end */
+
+/* more button */
+.list li {
+  box-sizing: border-box;
+  opacity: 1;
+  height:auto;
+  transition: all .4s ease 0s;
+  overfllow:hidden;
+}
+.list li.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  margin: 0 10px;
+  padding:0;
+}
+
+.more {
+  text-align: center;
+}
+button::before {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background-image: url("../material/plus.png");
+  background-repeat: no-repeat;
+  right: 84px;
+  top: 24px;
+}
+button {
+  background-color: #d6ceba;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:#fff;
+  padding: 0;
+  line-height: 60px;
+  width: 300px;
+  border-radius: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.more button::after {
+  background-image: url("../../media/examples/lizard.png");
+}
+/* more button end */
+
+/* header */
+header {
+  margin: 24px 0 24px 0;
+  margin: 0 0 0 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: #ffffff;
+  height: 68px;
+  padding: 24px 0 0px 0;
+}
+/* background end */
+
+/* mv */
+.mv div img {
+  width: 185px;
+}
+.mv div {
+  width: auto;
+  bottom: 0;
+  right: 35%;
+}
+.mv {
+  padding-top: 68px;
+}
+/* mv end */
+
+/* news twitter */
+.news_twitter section:nth-child(odd) {
+  width: 70%;
+}
+.news_twitter section:nth-child(even) {
+  width: 30%;
+}
+.news ul li {
+  width: 30%;
+  margin-right: 10px;
+}
+.news ul, .member ul {
+  flex-wrap: wrap;
+}
+.news ul h3 {
+  margin-top: 20px;
+  margin-bottom: 36px;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* news twitter end */
+
+.music_ttl img {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 85%;
+  display: block;
+}
+
+/* schedule */
+.schedule ul > li {
+  width: 100%;
+  border-bottom: 1px solid #e2e2e2;
+}
+.border {
+  width: 93%;
+  background-color: #e2e2e2;
+  height: 1px;
+  margin: 12px 0 0 20px;
+}
+.border p {
+  bottom: -18px;
+  left: 24px;
+  width: 60px;
+  height: 28px;
+  background-color: #ff6556;
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  border: none;
+  padding-top: 8px;
+  padding-right: 4px;
+  font-weight: 500;
+}
+.date {
+  width: 7%;
+  margin-left: 40px;
+  font-weight: 500;
+  color: #b4b4b4;
+  padding-top: 4px;
+}
+.date::before {
+  content: "";
+  width: 21px;
+  height: 1px;
+  background-color: #e2e2e2;
+  display: block;
+  left: 0;
+  top: 11px;
+}
+.date_contain {
+  width: auto;
+}
+.schedule_list .schedule {
+  margin: 16px 0 16px 0;
+}
+.schedule_list {
+  margin-bottom: 32px;
+}
+.schedule_list a span, .past_schedule_list a span {
+  color: #ff6556;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+/* schedule end */
+
+/* past schedule */
+.past_schedule_list li {
+  background-color: #f3f2ec;
+}
+.past_schedule_list ul > li {
+  margin-bottom: 40px;
+  padding: 24px 28px 24px 28px;
+}
+.past_date div {
+    font-weight: 600;
+    color: #b4b4b4;
+    font-size: 12px;
+}
+/* past schedule end */
+
+/* member */
+.member_adjust {
+  padding-top: 40px;
+  margin-top: 80px;
+}
+.member ul li {
+  width: 45%;
+  margin-bottom: 80px;
+}
+.personal_info div {
+  width: 64px;
+}
+.hoby, .skill, .personal_color {
+  margin-top: 32px;
+}
+.personal_color {
+  width: fit-content;
+  line-height: 20px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 4px 32px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.personal_color::before {
+  content: "";
+  border-radius: 100px 100px 100px 100px;
+  height: 8px;
+  width: 8px;
+  background-color: #000000;
+  top: 10px;
+  left: 16px;
+}
+.name {
+  font-size: 24px;
+  font-weight: 400;
+}
+.name_en, .hoby + p, .skill + p {
+  font-size: 12px;
+  color: #7d7d7d
+}
+.hoby + p, .skill + p {
+}
+.hoby, .skill {
+  font-size: 20px;
+  color: #00386a;
+  font-weight: 600;
+}
+.personal_color {
+  margin-bottom: 20px;
+}
+.personal_infomation p {
+  margin-left: 12px;
+}
+.personal_infomation div, .personal_infomation p {
+  font-weight: 500;
+}
+.personal_info > div
+, .personal_infomation p {
+  padding: 4px;
+  height: 24px;
+}
+.personal_info > div {
+  padding-top: 8px;
+}
+.personal_infomation p {
+  padding-top: 7px;
+}
+.personal_infomation .personal_info {
+  margin-bottom: 3px;
+}
+/* member end */
+
+/* personal color */
+.eriko_color {
+  color: #005598;
+}
+.eriko_personal_color::before, .eriko_personal_color .personal_info > div {
+  background-color: #005598;
+}
+
+.ramune_color {
+  color: #ffb3a9;
+}
+.ramune_personal_color::before, .ramune_personal_color .personal_info > div {
+  background-color: #ffb3a9;
+}
+
+.mio_color {
+  color: #8ecae6;
+}
+.mio_personal_color::before, .mio_personal_color .personal_info > div {
+  background-color: #8ecae6;
+}
+
+.mikan_color {
+  color: #e70046;
+}
+.mikan_personal_color::before, .mikan_personal_color .personal_info > div {
+  background-color: #e70046;
+}
+
+.nana_color {
+  color: #dfcf00;
+}
+.nana_personal_color::before, .nana_personal_color .personal_info > div {
+  background-color: #dfcf00;
+}
+
+.satomi_color {
+  color: #dd6299;
+}
+.satomi_personal_color::before, .satomi_personal_color .personal_info > div {
+  background-color: #dd6299;
+}
+
+.momomi_color {
+  color: #eda7bf;
+}
+.momomi_personal_color::before, .momomi_personal_color .personal_info > div {
+  background-color: #eda7bf;
+}
+
+.keina_color {
+  color: #709bd0;
+}
+.keina_personal_color::before, .keina_personal_color .personal_info > div {
+  background-color: #709bd0;
+}
+
+.airi_color {
+  color: #11b6ca;
+}
+.airi_personal_color::before, .airi_personal_color .personal_info > div {
+  background-color: #11b6ca;
+}
+
+/*
+.eriko_personal_color::before {
+  content: "";
+  border-radius: 100px 100px 100px 100px;
+  height: 12px;
+  width: 12px;
+  background-color: #005598;
+  top: 8px;
+  left: 16px;
+}
+*/
+/* personal color end */
+
+
+/* form */
+.contact_form h2 span {
+  font-size: 16px;
+  margin-left: 28px;
+}
+form [type="text"]
+, form [type="email"]
+, form [type="tel"] {
+  padding: 12px 8px;
+  width: 360px;
+}
+form p {
+  margin: 12px 0 8px 0;
+}
+form span {
+  color: #ff6556;
+}
+form input, form textarea {
+  background-color: #f3f2ec;
+  border: none;
+}
+form textarea {
+  padding: 12px 8px;
+  width: 880px;
+  height: 200px;
+}
+.back_btn, .submit_btn {
+  background-color: #d6ceba;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color:#fff;
+  padding: 0;
+  line-height: 40px;
+  width: 160px;
+  border-radius: 50px;
+}
+.back_btn {
+  text-align: right;
+  width: 270px;
+  height: 70px;
+}
+.back_btn a {
+  width: 50%;
+  margin-left: auto;
+  margin-top: 14px;
+  margin-right: 60px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.submit_btn input {
+  background: none;
+  margin-top: 16px;
+  margin-left: 56px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.submit_btn {
+  text-align: left;
+  width: 440px;
+  height: 70px;
+  margin-left: 28px;
+}
+.back_btn::before {
+  content: "";
+  background-image: url("../material/arrow_left.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 24px;
+  left: 32px;
+  width: 20px;
+  height: 24px;
+}
+.back_btn::after {
+  content: "";
+  background-image: url("../material/back_icon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 28px;
+  left: 64px;
+  width: 60px;
+  height: 16px;
+}
+.submit_btn::before {
+  content: "";
+  background-image: url("../material/arrow_right.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  width: 20px;
+  height: 24px;
+}
+.submit_btn::after {
+  content: "";
+  background-image: url("../material/submit.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 28px;
+  right: 64px;
+  width: 84px;
+  height: 16px;
+}
+.form_btn {
+  margin-top: 56px;
+  margin-bottom: 100px;
+}
+/* form end */
+
+/* footer */
+.banner_sentence p {
+  text-align: center;
+  padding:56px 0 40px 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+.copyright p {
+  padding: 40px 0 32px 0;
+  font-weight: normal;
+}
+.banner_img {
+  overflow: hidden;
+  width: 100%;
+  height: 250px;
+  margin: 0 auto;
+  display: block;
+	cursor: pointer;
+}
+.banner_img img {
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: block;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+.banner_img:hover img:nth-of-type(2) {
+  opacity: 0;
+}
+/* footer end */
+
+/* hamburger menu */
+nav {
+  height: 100%;
+}
+
+nav.globalMenuSp {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: rgba(252,238,237,0.9);
+    background:
+    color: #000;
+    text-align: center;
+    width: 100%;
+    transition: opacity .6s ease, visibility .6s ease;
+    transition: all .6s;
+    opacity: 0;
+}
+
+nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    margin-top: 100px;
+    display: none;
+}
+nav.globalMenuSp ul li {
+    font-size: 1.1em;
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+/* 最後はラインを描かない */
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+nav.globalMenuSp ul li a {
+    display: block;
+    color: #ff6556;
+    padding: 1em 0;
+    margin: 0 auto;
+}
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+  opacity: 100;
+  z-index: 1
+}
+nav.globalMenuSp.active ul {
+  display: block;
+}
+.globalMenuSp ul li a {
+  display: inline-block;
+}
+.navToggle {
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 0px;
+    top: 0px;
+    width: 42px;
+    height: 33px;
+    cursor: pointer;
+    z-index: 20;
+    text-align: center;
+    margin: 21px 160px 0 0;
+}
+.navToggle span {
+    display: block;
+    position: absolute;    /* .navToggleに対して */
+    width: 30px;
+    border-bottom: solid 2px #ff6556;
+    border-radius: 10%;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+}
+.navToggle span:nth-child(1) {
+    top: 9px;
+    width: 40px;
+    left: -14px;
+}
+.navToggle span:nth-child(2) {
+    top: 18px;
+    width: 32px;
+    left: -6px;
+}
+.navToggle span:nth-child(3) {
+    top: 27px;
+    width: 20px;
+    right: 0;
+}
+.navToggle span:nth-child(4) {
+    border: none;
+    color: #eee;
+    font-size: 9px;
+    font-weight: bold;
+    top: 34px;
+}
+/* 最初のspanをマイナス45度に */
+.navToggle.active span:nth-child(1) {
+    top: 18px;
+    left: 0px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+/* 2番目と3番目のspanを45度に */
+.navToggle.active span:nth-child(2),
+.navToggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 40px;
+    left: 0px;
+}
+.globalMenuSp span {
+  width: 250px;
+  height: 1px;
+  border-bottom: 2px solid #ffffff;
+  display: block;
+  margin: 0 auto;
+}
+/* hamburger menu */
